@@ -79,31 +79,6 @@ function handleRequest(req, res) {
 
 }
 
-
-// function htm(response) {
-//   response.writeHead(200, {"Content-Type": "text/html"});
-
-//   var count = 0;
-//   var handler = function(error, content){
-//     count++;
-//     if (error){
-//       console.log(error);
-//     }
-//     else{
-//       response.write(content);
-//     }
-
-//     if (count == 3) {
-//       response.end();
-//     }
-//   }
-
-//   fs.readFile('index.html', handler);
-//   fs.readFile('public/home.html', handler);
-//   fs.readFile('public/survey.html', handler);
-// }
-
-
 // When we visit any path that is not specifically defined, this function is run.
 function display404(url, req, res) {
   res.writeHead(404, {
